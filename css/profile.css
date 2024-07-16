@@ -1,0 +1,166 @@
+.profile{
+    width: 30%;
+    margin-top: 30px;
+}
+
+.favoutite-themes{
+    width: 35%;
+    margin-top: 30px;
+    margin-left: 10px;
+    min-height: 65px;
+}
+
+.profile-content{
+    display: flex;
+    flex-direction: row;
+}
+
+.profile-head{
+    width: 100%;
+    height: 40px;
+    background-color: #667DCB;
+    display: flex;
+    align-items: center;
+    padding: 0 10px 0 10px;
+}
+
+.profile-body{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 10px 0 10px;
+    border-width: 0px 1px 1px 1px;
+    border-style: solid;
+    border-color: #AFAFAF;
+}
+
+.favoutite-themes-body{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 10px 0 10px;
+    border-width: 0px 1px 1px 1px;
+    border-style: solid;
+    border-color: #AFAFAF;
+}
+
+.main-content{
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-p{
+    color: black;
+    font-family: 'Roboto-Light';
+}
+
+.theme-link{
+    color: black;
+    font-family: 'Roboto-Light';
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+#user-avatar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 202px;
+    height: 202px;
+    cursor: default;
+}
+
+.user-avatar-border{
+    border-width: 1px 1px 1px 1px;
+    border-style: solid;
+    border-color: #AFAFAF;
+}
+
+.user-avatar-border:hover{
+    border-width: 3px 3px 3px 3px!important;
+    border-style: dashed!important;
+    border-color: blue!important;
+}
+
+.user-avatar-border2{
+    border-width: 1px 1px 1px 1px;
+    border-style: solid;
+    border-color: #AFAFAF;
+}
+
+.user-avatar-shadow{
+    width: 200px;
+    height: 200px;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+}
+
+.change-avatar{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    padding: 0;
+    border: none;
+}
+
+.change-avatar-p{
+    color: white;  
+    display: none;
+    position: absolute;
+    align-self: center; 
+    text-align: center;
+}
+
+.change-avatar:hover > .user-avatar-shadow{
+    display: flex;
+    background-color: black;
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.change-avatar:hover > .change-avatar-p{
+    display: flex;
+    cursor: pointer;
+}
+
+#profileButtons{
+    display: none;
+    justify-content: end;
+    align-content: center;
+    margin-bottom: 10px;
+}
+
+#profile-name{
+    display: flex;
+    align-items: center;
+}
+
+#profile-about{
+    display: flex;
+    align-items: center;
+}
+
+#profile-email{
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 1250px) {
+    .profile{
+        width: 100%;
+    }
+
+    .favoutite-themes{
+        width: 100%;
+        margin-left: 0;
+    }
+    
+    .profile-content{
+        flex-direction: column;
+    }
+}
